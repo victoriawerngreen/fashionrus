@@ -53,6 +53,25 @@ footer {
 }
 footer a {
   margin-right: auto;
+  width: 120px;
+}
+
+/* ------------------ HEADER/MENU ------------------  */
+header {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+header a {
   text-decoration: none;
   color: #242424;
+  font-family: "Rethink Sans", serif;
+}
+
+.logo {
+  width: 250px;
+  margin-right: auto;
 }
