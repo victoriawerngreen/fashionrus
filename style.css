@@ -41,3 +41,18 @@ main {
   font-family: "Rethink Sans", serif;
   font-weight: 500;
 }
+
+/* ------------------ FOOTER ------------------  */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Rethink Sans", serif;
+  gap: 4px;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+footer a {
+  margin-right: auto;
+  text-decoration: none;
+  color: #242424;
+}
