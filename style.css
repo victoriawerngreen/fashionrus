@@ -10,3 +10,34 @@ img {
   display: block;
 }
 /*************** Reset *********************/
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* ------------------ INDEX SIDE ------------------ */
+.categories {
+  display: grid;
+}
+
+@media (min-width: 800px) {
+  .categories {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+.categories_knap {
+  background-color: #3f4f8a;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.categories_knap a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-family: "Rethink Sans", serif;
+  font-weight: 500;
+}
