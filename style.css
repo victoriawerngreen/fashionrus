@@ -127,18 +127,20 @@ p {
 }
 
 .kurv_knap {
-  background-color: #717274;
   padding: 10px 20px;
   border-radius: 2px;
   text-align: center;
   width: 400px;
   margin-top: 80px;
+
+  background-color: #242424;
   color: #f4f4f4;
 }
 
 .kurv_knap:hover {
-  background-color: #b6b7b9;
   color: #242424;
+  background-color: #b6b7b9;
+
   cursor: pointer;
 }
 
@@ -172,4 +174,118 @@ p {
 
 .option {
   font-weight: 700;
+}
+
+/*************** MENU *********************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header .logo a {
+  color: #333333;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* .logo-pic {
+  width: 60px;
+} */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #b6b7b9;
+}
+
+/******V BURGER V*********/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #242424;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  border-radius: 2px;
+}
+
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
 }
