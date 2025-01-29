@@ -21,7 +21,7 @@ main {
   margin-top: 40px;
 }
 
-/* ------------------ INDEX SIDE ------------------ */
+/* ------------------ INDEX/CATEGORY SIDE ------------------ */
 .categories {
   display: grid;
   padding-top: 40px;
@@ -31,6 +31,7 @@ main {
   .categories {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    padding-bottom: 200px;
   }
 }
 
@@ -39,7 +40,7 @@ main {
   padding-top: 50px;
 }
 .categories_knap {
-  background-color: #3f4f8a;
+  background-color: #242424;
   padding: 40px;
   margin: 10px;
   border-radius: 2px;
@@ -51,6 +52,9 @@ main {
   text-decoration: none;
   font-family: "Rethink Sans", serif;
   font-weight: 500;
+}
+.categories_knap:hover{
+    background-color: #3f4f8a;
 }
 
 /* ------------------ FOOTER ------------------  */
@@ -71,8 +75,8 @@ footer a {
 header {
   display: flex;
   gap: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
   margin-top: 10px;
 }
 
