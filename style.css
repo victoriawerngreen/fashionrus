@@ -15,9 +15,16 @@ main {
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.path {
+  margin-left: 22px;
+  margin-top: 40px;
+}
+
 /* ------------------ INDEX SIDE ------------------ */
 .categories {
   display: grid;
+  padding-top: 40px;
 }
 
 @media (min-width: 800px) {
@@ -27,6 +34,10 @@ main {
   }
 }
 
+.h1-center {
+  text-align: center;
+  padding-top: 50px;
+}
 .categories_knap {
   background-color: #3f4f8a;
   padding: 40px;
@@ -74,4 +85,91 @@ header a {
 .logo {
   width: 250px;
   margin-right: auto;
+}
+
+/* ------------------ PRODUKT ------------------  */
+.product_1-1 {
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.grid_1-1 {
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 800px) {
+  .product_1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+h1 {
+  font-family: "Rethink Sans", serif;
+  color: #242424;
+}
+
+h2 {
+  font-family: "Jaldi", serif;
+  color: #242424;
+}
+
+p {
+  font-family: "Rethink Sans", serif;
+  color: #242424;
+}
+
+.product_1-1 img {
+  height: 550px;
+  width: auto;
+  margin: auto;
+}
+
+.kurv_knap {
+  background-color: #717274;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-align: center;
+  width: 400px;
+  margin-top: 80px;
+  color: #f4f4f4;
+}
+
+.kurv_knap:hover {
+  background-color: #b6b7b9;
+  color: #242424;
+  cursor: pointer;
+}
+
+.brand-category {
+  color: #b6b7b9;
+  font-weight: 600;
+}
+.description {
+  font-style: italic;
+}
+
+.price {
+  color: #b6b7b9;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+.rabat {
+  color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.price-m-rabat {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.grid_1-1 {
+  padding-top: 20px;
+}
+
+.option {
+  font-weight: 700;
 }
