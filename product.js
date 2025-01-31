@@ -1,5 +1,6 @@
 const productContainer = document.querySelector(".product_1-1");
 const productId = 1525;
+// productId er det nummer produktet har på kea-alt-del.dk (hvilket vi har linket til i fetch)
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
 .then(responce => responce.json())

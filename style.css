@@ -96,8 +96,13 @@ header a {
   display: grid;
   padding-top: 50px;
   padding-bottom: 90px;
-  margin-left: 20px;
-  margin-right: 20px;
+margin: 30px;  
+}
+
+.product_1-1{
+  padding: 15px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 8px #d6d6d7;
 }
 
 .grid_1-1 {
@@ -220,10 +225,19 @@ p {
   }
 }
 
-.grid_1-1-1-1 {
-   margin: 20px;
+.product-item:hover {
+transform: translateY(-1%);
+transition: 0.2s transform;
+/* linjen ovenover sætter hastigheden for hover effekten */
+
+  ;
 }
 
+.product-item{
+  padding: 15px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 8px #d6d6d7;
+}
 
 @media (min-width: 800px) {
     .product-item {
@@ -361,4 +375,4 @@ p {
       font-size: 24px;
     }
   }
-}
+
