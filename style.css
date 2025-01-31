@@ -45,13 +45,12 @@ main {
   margin: 10px;
   border-radius: 2px;
   text-align: center;
-}
-
-.categories_knap a {
+  font-family: "Rethink Sans", serif;
+  text-decoration: none;
   color: #f4f4f4;
   text-decoration: none;
-  font-family: "Rethink Sans", serif;
   font-weight: 500;
+
 }
 .categories_knap:hover {
   background-color: #3f4f8a;
@@ -114,11 +113,6 @@ margin: 30px;
   .product_1-1 {
     grid-template-columns: 1fr 1fr;
   }
-  .product_1-1 img {
-    padding-bottom: 40px;
-  }
-
-
 }
 
 @media (max-width: 800px) {
@@ -243,7 +237,7 @@ transition: 0.2s transform;
     .product-item {
         display: grid;
         grid-template-rows: subgrid;
-        grid-row: 1/3;
+        grid-row: span 2;
     }
   }
 
@@ -253,7 +247,9 @@ transition: 0.2s transform;
   }
 
   .price_view {
-    color: #b6b7b9;
+    color: #242424;
+    font-weight: 600;
+    padding-top: 10px;
   }
 
   .produkt_titel {
