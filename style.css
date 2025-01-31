@@ -45,13 +45,12 @@ main {
   margin: 10px;
   border-radius: 2px;
   text-align: center;
-}
-
-.categories_knap a {
+  font-family: "Rethink Sans", serif;
+  text-decoration: none;
   color: #f4f4f4;
   text-decoration: none;
-  font-family: "Rethink Sans", serif;
   font-weight: 500;
+
 }
 .categories_knap:hover {
   background-color: #3f4f8a;
@@ -96,8 +95,13 @@ header a {
   display: grid;
   padding-top: 50px;
   padding-bottom: 90px;
-  margin-left: 20px;
-  margin-right: 20px;
+margin: 30px;  
+}
+
+.product_1-1{
+  padding: 15px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 8px #d6d6d7;
 }
 
 .grid_1-1 {
@@ -109,11 +113,6 @@ header a {
   .product_1-1 {
     grid-template-columns: 1fr 1fr;
   }
-  .product_1-1 img {
-    padding-bottom: 40px;
-  }
-
-
 }
 
 @media (max-width: 800px) {
@@ -220,16 +219,25 @@ p {
   }
 }
 
-.grid_1-1-1-1 {
-   margin: 20px;
+.product-item:hover {
+transform: translateY(-1%);
+transition: 0.2s transform;
+/* linjen ovenover sætter hastigheden for hover effekten */
+
+  ;
 }
 
+.product-item{
+  padding: 15px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 8px #d6d6d7;
+}
 
 @media (min-width: 800px) {
     .product-item {
         display: grid;
         grid-template-rows: subgrid;
-        grid-row: 1/3;
+        grid-row: span 2;
     }
   }
 
@@ -239,7 +247,9 @@ p {
   }
 
   .price_view {
-    color: #b6b7b9;
+    color: #242424;
+    font-weight: 600;
+    padding-top: 10px;
   }
 
   .produkt_titel {
@@ -361,4 +371,4 @@ p {
       font-size: 24px;
     }
   }
-}
+
