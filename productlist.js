@@ -1,6 +1,10 @@
+const myCategory = new URLSearchParams(window.location.search).get("category");
 const listContainer = document.querySelector(".grid_1-1-1-1");
+const overskrift = document.querySelector("h1");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=100`)
+overskrift.innerHTML = myCategory;
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`)
   .then((response) => response.json())
   // skriver () efter .json fordi det er en funktion der allerede findes og vi kalder på den via ()
   .then((data) => showList(data));
