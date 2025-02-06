@@ -211,10 +211,6 @@ p {
   font-weight: 700;
 }
 
-.info {
-  font-family: "Rethink Sans", serif;
-}
-
 /* ------------------ PRODUKTLISTE ------------------  */
 
 .grid_1-1-1-1 {
@@ -247,9 +243,14 @@ p {
   box-shadow: 1px 1px 8px #d6d6d7;
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  gap: 10px;
+  grid-row: span 6;
   align-items: start;
   position: relative;
+  font-family: "Rethink Sans", serif;
+}
+.product-item p {
+  padding: 0px;
 }
 
 @media (min-width: 800px) {
@@ -418,7 +419,6 @@ nav {
   position: absolute;
   right: 10px;
   top: 10px;
-
 }
 
 .show {
