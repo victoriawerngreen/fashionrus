@@ -222,7 +222,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  grid-template-rows: auto ;
+  grid-template-rows: auto;
 }
 
 @media (min-width: 800px) {
@@ -247,14 +247,14 @@ p {
   box-shadow: 1px 1px 8px #d6d6d7;
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3; 
+  grid-row: span 3;
   align-items: start;
+  position: relative;
 }
 
 @media (min-width: 800px) {
   .product-item {
     display: grid;
-   
   }
 }
 
@@ -415,6 +415,10 @@ nav {
   width: 80px;
   text-align: center;
   visibility: hidden;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
 }
 
 .show {
