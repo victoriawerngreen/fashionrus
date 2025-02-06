@@ -33,20 +33,17 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
 
             <p class="rabat ${data.discount && "isOnSale"}">${data.discount}% off</p>
 
-          <p class="price-m-rabat">Now 584DKK</p>
-<p class="sold_out ${data.soldout && "soldOut"}">Sold Out</p>
+          <p class="price-m-rabat">Now ${data.price - (data.price / 100) * data.discount}DKK</p>
+          <p class="sold_out ${data.soldout && "soldOut"}">Sold Out</p>
           <div class="grid_1-1">
-            <p class="option">Color:</p>
-            <p>Navy</p>
-          </div>
-
-          <div class="grid_1-1">
-            <p class="option">Size:</p>
-            <p>One-size</p>
+            <p class="option">Gender:</p>
+            <p>${data.gender}</p>
           </div>
 
           <div class="laeg-i-kurv">
             <p class="kurv_knap">Add to basket</p>
           </div>
+          <div> <p class="option">Product information:</p>
+            <p class="info">${data.description}</p> </div>
           `;
   });
